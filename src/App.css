@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  padding-top: 15px;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.action-section {
+  max-width: 37.5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.interface-section {
+  width: 35%;
+}
+
+.select-toggle {
+  margin-bottom: 25px;
+}
+
+.select-option {
+  width: 260px;
+  padding: 5px;
+}
+
+.start-button {
+  padding: 5px;
+  background-color: #1e90ff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  min-width: 105px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.interface-header {
+  margin: 0;
+}
+
+.square-for-hover {
+  border: 1px solid #000;
+}
+
+.interface-header {
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.on-hover {
+  background-color: #1e90ff;
+}
+
+.grid_5 {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 75px);
+  grid-auto-rows: 75px;
+}
+
+.grid_15 {
+  display: inline-grid;
+  grid-template-columns: repeat(15, 25px);
+  grid-template-rows: repeat(15, 25px);
+}
+
+.grid_25 {
+  display: inline-grid;
+  grid-template-columns: repeat(25, 15px);
+  grid-auto-rows: 15px;
+}
+
+.information-item {
+  color: #556b2f;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid darkgreen;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  border-radius: 5px;
+  background-color: #ffe4b5;
+}
+
+.row-span {
+  padding-right: 10px;
 }
